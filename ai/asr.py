@@ -31,6 +31,7 @@ def transcribe(audio_path: str, language: str = "hi") -> str:
 
     wav = wav.unsqueeze(0)
 
+
     if sample_rate != 16000:
         import torchaudio
 
